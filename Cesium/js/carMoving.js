@@ -10,6 +10,44 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     selectionIndicator: false,
 
 })
+
+viewer.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(
+        78.571485, 17.473760, 
+        1.5
+    ), 
+    model: {
+        uri: "/resources/Models/building2.glb",
+        // minimumPixelSize: 128, 
+        // maximumScale: 200,
+        scale: 1, 
+    }, 
+}); 
+viewer.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(
+         78.571255, 17.474065,
+        1.5
+    ), 
+    model: {
+        uri: "/resources/Models/building1.glb",
+        // minimumPixelSize: 128, 
+        // maximumScale: 200,
+        scale: 1, 
+    }, 
+}); 
+viewer.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(
+         78.571587,17.474478,
+        1.5
+    ), 
+    model: {
+        uri: "/resources/Models/building1.glb",
+        // minimumPixelSize: 128, 
+        // maximumScale: 200,
+        scale: 1, 
+    }, 
+});
+
 var viewer1 = new Cesium.Viewer('cesiumContainer1', {
     animation: false, // Disable animation widget
     timeline: false, // Disable timeline widget
